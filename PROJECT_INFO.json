@@ -1,0 +1,10 @@
+{
+  "project": "BazarDor Final",
+  "run": [
+    "npm install",
+    "npm run dev"
+  ],
+  "build": "npm run build",
+  "api": "https://api.api-store.workers.dev/api/bazardor",
+  "auth": "localStorage demo; replace with real Better Auth + OAuth before production submission"
+}
