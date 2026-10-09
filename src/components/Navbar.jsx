@@ -37,7 +37,16 @@ export default function Navbar() {
             </div>
             <div>
               <div className="font-black text-xl text-[#087f3e]">বাজার দর</div>
-              <div className="text-xs text-gray-500">বুধবার, ৭ অক্টোবর ২০২৬</div>
+              
+<div className="text-xs text-gray-500">
+  {new Intl.DateTimeFormat("bn-BD", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "Asia/Dhaka",
+  }).format(new Date())}
+</div>
             </div>
           </Link>
 
